@@ -1,0 +1,143 @@
+
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f4e6;
+}
+
+/* Navbar */
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #8b5a2b; /* Darker brown color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar .logo {
+    font-size: 24px; /* Slightly larger logo text */
+    color: white;
+    font-weight: bold; /* Bold text for the logo */
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px 15px; /* Added padding for clickable area */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.navbar .nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Light background on hover */
+    color: #8b5a2b; /* Change text color on hover */
+}
+
+
+/* Header Section */
+.header {
+    position: relative;
+    text-align: center;
+}
+
+.header-image {
+    width: 100%;
+    height: 80vh; /* Maintain aspect ratio */
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for better readability */
+}
+
+.header-text h1 {
+    font-size: 2.5em; /* Adjust font size */
+}
+
+.header-text p {
+    font-size: 1.2em; /* Adjust font size for subtitle */
+}
+
+/* Contact Section */
+.contact {
+    padding: 40px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 2px solid #007bff; /* Add a border for separation */
+}
+
+.contact h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333; /* Dark color for header */
+    font-weight: bold; /* Make header bold */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    font-size: 1.2em; /* Smaller font size for a cleaner look */
+    color: #555; /* Softer text color */
+    background-color: #fff; /* White background for info items */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding around the text */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Animation for hover */
+}
+
+.info-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.info-item i {
+    margin-right: 10px;
+    color: #007bff; /* Icon color */
+}
+
+.info-item a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.2em; /* Adjusted font size */
+}
+
+.info-item a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #8b5a2b; /* Same color as the navbar for consistency */
+    color: white; /* White text color */
+    text-align: center; /* Center align the text */
+    padding: 10px 0; /* Padding for spacing */
+    position: relative; /* Ensure proper layout */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .contact-info {
+        flex-direction: column;
+    }
+}
