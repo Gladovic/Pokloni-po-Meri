@@ -21,7 +21,7 @@ body {
 }
 
 .navbar .logo {
-    font-size: 24px; /* Slightly larger logo text */
+    font-size: 15px; /* Slightly larger logo text */
     color: white;
     font-weight: bold; /* Bold text for the logo */
 }
@@ -224,5 +224,10 @@ body {
         margin: 10px; /* Add margin around the tabs */
         width: calc(40% - 20px); /* Make tabs take up 50% of the width minus margin */
         /* Alternatively, if you want them to be a fixed size, use a fixed width instead of calc */
+    }
+
+    .modal-content img{
+        width: 200px;
+        height: 200px;
     }
 }
