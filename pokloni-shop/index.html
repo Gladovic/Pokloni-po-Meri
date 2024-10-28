@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokloni po Meri</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">Pokloni po Meri</div>
+    <div class="nav-links">
+        <a href="index.html#home">Pocetna</a>
+        <a href="kontakt.html">Kontakt</a>
+    </div>
+  </nav>
+
+  <!-- Header Image with Text -->
+  <header class="header">
+    <img src="img/1.jpg" alt="Header Image" class="header-image">
+    <div class="header-text">
+      <h1>Crafted with Heart</h1>
+      <p>Discover our collection of wooden decorations, handcrafted earrings, custom mugs, and t-shirts. Perfect gifts for every occasion, made with care and attention to detail.</p>
+    </div>
+  </header>
+
+  <!-- Product Showcase with Tabs -->
+  <section class="product-showcase">
+    <div class="tabs">
+      <button class="tab active" onclick="showCategory('all')">Sve</button>
+      <button class="tab" onclick="showCategory('dekoracija')">Dekoracija</button>
+      <button class="tab" onclick="showCategory('mindjuse')">Mindjuse</button>
+      <button class="tab" onclick="showCategory('novogodisnji-ukrasi')">Novogodisnji ukrasi</button>
+      <button class="tab" onclick="showCategory('solje')">Solje</button>
+      <button class="tab" onclick="showCategory('majice')">Majice</button>
+      <button class="tab" onclick="showCategory('duksevi')">Duksevi</button>
+      <button class="tab" onclick="showCategory('igracke')">Igracke</button>
+    </div>
+    <div id="product-container" class="product-container">
+      <!-- Product Card -->
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0001.jpg', 'Mindjuse(1)', 'Sifra: P0001, Cena: 500RSD')">
+        <img src="img/mindjuse/0001.jpg" alt="Product Image">
+        <h3>Mindjuse(1)</h3>
+        <p>Sifra: P0001</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0002.jpg', 'Mindjuse(2)', 'Sifra: P0002, Cena: 500RSD')">
+        <img src="img/mindjuse/0002.jpg" alt="Product Image">
+        <h3>Mindjuse(2)</h3>
+        <p>Sifra: P0002</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0003.jpg', 'Mindjuse(3)', 'Sifra: P0003, Cena: 500RSD')">
+        <img src="img/mindjuse/0003.jpg" alt="Product Image">
+        <h3>Mindjuse(3)</h3>
+        <p>Sifra: P0003</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0004.jpg', 'Mindjuse(4)', 'Sifra: P0004, Cena: 500RSD')">
+        <img src="img/mindjuse/0004.jpg" alt="Product Image">
+        <h3>Mindjuse(4)</h3>
+        <p>Sifra: P0004</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0005.jpg', 'Mindjuse(5)', 'Sifra: P0005, Cena: 500RSD')">
+        <img src="img/mindjuse/0005.jpg" alt="Product Image">
+        <h3>Mindjuse(5)</h3>
+        <p>Sifra: P0005</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0006.jpg', 'Mindjuse(6)', 'Sifra: P0006, Cena: 500RSD')">
+        <img src="img/mindjuse/0006.jpg" alt="Product Image">
+        <h3>Mindjuse(6)</h3>
+        <p>Sifra: P0006</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0007.jpg', 'Mindjuse(7)', 'Sifra: P0007, Cena: 500RSD')">
+        <img src="img/mindjuse/0007.jpg" alt="Product Image">
+        <h3>Mindjuse(7)</h3>
+        <p>Sifra: P0007</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0008.jpg', 'Mindjuse(8)', 'Sifra: P0008, Cena: 500RSD')">
+        <img src="img/mindjuse/0008.jpg" alt="Product Image">
+        <h3>Mindjuse(8)</h3>
+        <p>Sifra: P0008</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0009.jpg', 'Mindjuse(9)', 'Sifra: P0009, Cena: 500RSD')">
+        <img src="img/mindjuse/0009.jpg" alt="Product Image">
+        <h3>Mindjuse(9)</h3>
+        <p>Sifra: P0009</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0010.jpg', 'Mindjuse(1)', 'Sifra: P0010, Cena: 500RSD')">
+        <img src="img/mindjuse/0010.jpg" alt="Product Image">
+        <h3>Mindjuse(10)</h3>
+        <p>Sifra: P0010</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0011.jpg', 'Mindjuse(11)', 'Sifra: P0011, Cena: 500RSD')">
+        <img src="img/mindjuse/0011.jpg" alt="Product Image">
+        <h3>MMindjuse(11)</h3>
+        <p>Sifra: P0011</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0012.jpg', 'Mindjuse(12)', 'Sifra: P0012, Cena: 500RSD')">
+        <img src="img/mindjuse/0012.jpg" alt="Product Image">
+        <h3>MMindjuse(12)</h3>
+        <p>Sifra: P0012</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0013.jpg', 'Mindjuse(13)', 'Sifra: P0013, Cena: 500RSD')">
+        <img src="img/mindjuse/0013.jpg" alt="Product Image">
+        <h3>MMindjuse(13)</h3>
+        <p>Sifra: P0013</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0014.jpg', 'Mindjuse(14)', 'Sifra: P0014, Cena: 500RSD')">
+        <img src="img/mindjuse/0014.jpg" alt="Product Image">
+        <h3>MMindjuse(14)</h3>
+        <p>Sifra: P0014</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0015.jpg', 'Mindjuse(15)', 'Sifra: P0015, Cena: 500RSD')">
+        <img src="img/mindjuse/0015.jpg" alt="Product Image">
+        <h3>MMindjuse(15)</h3>
+        <p>Sifra: P0015</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0016.jpg', 'Mindjuse(16)', 'Sifra: P0016, Cena: 500RSD')">
+        <img src="img/mindjuse/0016.jpg" alt="Product Image">
+        <h3>MMindjuse(16)</h3>
+        <p>Sifra: P0016</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0017.jpg', 'Mindjuse(17)', 'Sifra: P0017, Cena: 500RSD')">
+        <img src="img/mindjuse/0017.jpg" alt="Product Image">
+        <h3>Mindjuse(17)</h3>
+        <p>Sifra: P0017</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0018.jpg', 'Mindjuse(18)', 'Sifra: P0018, Cena: 500RSD')">
+        <img src="img/mindjuse/0018.jpg" alt="Product Image">
+        <h3>Mindjuse(18)</h3>
+        <p>Sifra: P0018</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0019.jpg', 'Mindjuse(19)', 'Sifra: P0019, Cena: 500RSD')">
+        <img src="img/mindjuse/0019.jpg" alt="Product Image">
+        <h3>Mindjuse(19)</h3>
+        <p>Sifra: P0019</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0020.jpg', 'Mindjuse(20)', 'Sifra: P0020, Cena: 500RSD')">
+        <img src="img/mindjuse/0020.jpg" alt="Product Image">
+        <h3>Mindjuse(20)</h3>
+        <p>Sifra: P0020</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0021.jpg', 'Mindjuse(21)', 'Sifra: P0021, Cena: 500RSD')">
+        <img src="img/mindjuse/0021.jpg" alt="Product Image">
+        <h3>Mindjuse(21)</h3>
+        <p>Sifra: P0021</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0022.jpg', 'Mindjuse(22)', 'Sifra: P0022, Cena: 500RSD')">
+        <img src="img/mindjuse/0022.jpg" alt="Product Image">
+        <h3>Mindjuse(22)</h3>
+        <p>Sifra: P0022</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0023.jpg', 'Mindjuse(23)', 'Sifra: P0023, Cena: 500RSD')">
+        <img src="img/mindjuse/0023.jpg" alt="Product Image">
+        <h3>Mindjuse(23)</h3>
+        <p>Sifra: P0023</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0024.jpg', 'Mindjuse(24)', 'Sifra: P0024, Cena: 500RSD')">
+        <img src="img/mindjuse/0024.jpg" alt="Product Image">
+        <h3>Mindjuse(24)</h3>
+        <p>Sifra: P0024</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0025.jpg', 'Mindjuse(25)', 'Sifra: P0025, Cena: 500RSD')">
+        <img src="img/mindjuse/0025.jpg" alt="Product Image">
+        <h3>Mindjuse(25)</h3>
+        <p>Sifra: P0025</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0026.jpg', 'Mindjuse(26)', 'Sifra: P0026, Cena: 500RSD')">
+        <img src="img/mindjuse/0026.jpg" alt="Product Image">
+        <h3>Mindjuse(26)</h3>
+        <p>Sifra: P0026</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0027.jpg', 'Mindjuse(27)', 'Sifra: P0027, Cena: 500RSD')">
+        <img src="img/mindjuse/0027.jpg" alt="Product Image">
+        <h3>Mindjuse(27)</h3>
+        <p>Sifra: P0027</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0028.jpg', 'Mindjuse(28)', 'Sifra: P0028, Cena: 500RSD')">
+        <img src="img/mindjuse/0028.jpg" alt="Product Image">
+        <h3>Mindjuse(28)</h3>
+        <p>Sifra: P0028</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0029.jpg', 'Mindjuse(29)', 'Sifra: P0029, Cena: 500RSD')">
+        <img src="img/mindjuse/0029.jpg" alt="Product Image">
+        <h3>Mindjuse(29)</h3>
+        <p>Sifra: P0029</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0030.jpg', 'Mindjuse(30)', 'Sifra: P0030, Cena: 500RSD')">
+        <img src="img/mindjuse/0030.jpg" alt="Product Image">
+        <h3>Mindjuse(30)</h3>
+        <p>Sifra: P0030</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0031.jpg', 'Mindjuse(31)', 'Sifra: P0031, Cena: 500RSD')">
+        <img src="img/mindjuse/0031.jpg" alt="Product Image">
+        <h3>Mindjuse(31)</h3>
+        <p>Sifra: P0031</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0032.jpg', 'Mindjuse(32)', 'Sifra: P0032, Cena: 500RSD')">
+        <img src="img/mindjuse/0032.jpg" alt="Product Image">
+        <h3>Mindjuse(32)</h3>
+        <p>Sifra: P0032</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0033.jpg', 'Mindjuse(33)', 'Sifra: P0033, Cena: 500RSD')">
+        <img src="img/mindjuse/0033.jpg" alt="Product Image">
+        <h3>Mindjuse(33)</h3>
+        <p>Sifra: P0033</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0034.jpg', 'Mindjuse(34)', 'Sifra: P0034, Cena: 500RSD')">
+        <img src="img/mindjuse/0034.jpg" alt="Product Image">
+        <h3>Mindjuse(34)</h3>
+        <p>Sifra: P0034</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0035.jpg', 'Mindjuse(35)', 'Sifra: P0035, Cena: 500RSD')">
+        <img src="img/mindjuse/0035.jpg" alt="Product Image">
+        <h3>Mindjuse(35)</h3>
+        <p>Sifra: P0035</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0036.jpg', 'Mindjuse(36)', 'Sifra: P0036, Cena: 500RSD')">
+        <img src="img/mindjuse/0036.jpg" alt="Product Image">
+        <h3>Mindjuse(36)</h3>
+        <p>Sifra: P0036</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0037.jpg', 'Mindjuse(37)', 'Sifra: P0037, Cena: 500RSD')">
+        <img src="img/mindjuse/0037.jpg" alt="Product Image">
+        <h3>Mindjuse(37)</h3>
+        <p>Sifra: P0037</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0038.jpg', 'Mindjuse(38)', 'Sifra: P0038, Cena: 500RSD')">
+        <img src="img/mindjuse/0038.jpg" alt="Product Image">
+        <h3>Mindjuse(38)</h3>
+        <p>Sifra: P0038</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0039.jpg', 'Mindjuse(39)', 'Sifra: P0039, Cena: 500RSD')">
+        <img src="img/mindjuse/0039.jpg" alt="Product Image">
+        <h3>Mindjuse(39)</h3>
+        <p>Sifra: P0039</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0040.jpg', 'Mindjuse(40)', 'Sifra: P0040, Cena: 500RSD')">
+        <img src="img/mindjuse/0040.jpg" alt="Product Image">
+        <h3>Mindjuse(40)</h3>
+        <p>Sifra: P0040</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0041.jpg', 'Mindjuse(41)', 'Sifra: P0041, Cena: 500RSD')">
+        <img src="img/mindjuse/0041.jpg" alt="Product Image">
+        <h3>Mindjuse(41)</h3>
+        <p>Sifra: P0041</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0042.jpg', 'Mindjuse(42)', 'Sifra: P0042, Cena: 500RSD')">
+        <img src="img/mindjuse/0042.jpg" alt="Product Image">
+        <h3>Mindjuse(42)</h3>
+        <p>Sifra: P0042</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0043.jpg', 'Mindjuse(43)', 'Sifra: P0043, Cena: 500RSD')">
+        <img src="img/mindjuse/0043.jpg" alt="Product Image">
+        <h3>Mindjuse(43)</h3>
+        <p>Sifra: P0043</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0044.jpg', 'Mindjuse(44)', 'Sifra: P0044, Cena: 500RSD')">
+        <img src="img/mindjuse/0044.jpg" alt="Product Image">
+        <h3>Mindjuse(44)</h3>
+        <p>Sifra: P0044</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0045.jpg', 'Mindjuse(45)', 'Sifra: P0045, Cena: 500RSD')">
+        <img src="img/mindjuse/0045.jpg" alt="Product Image">
+        <h3>Mindjuse(45)</h3>
+        <p>Sifra: P0045</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0046.jpg', 'Mindjuse(46)', 'Sifra: P0046, Cena: 500RSD')">
+        <img src="img/mindjuse/0046.jpg" alt="Product Image">
+        <h3>Mindjuse(46)</h3>
+        <p>Sifra: P0046</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0047.jpg', 'Mindjuse(47)', 'Sifra: P0047, Cena: 500RSD')">
+        <img src="img/mindjuse/0047.jpg" alt="Product Image">
+        <h3>Mindjuse(47)</h3>
+        <p>Sifra: P0047</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0048.jpg', 'Mindjuse(48)', 'Sifra: P0048, Cena: 500RSD')">
+        <img src="img/mindjuse/0048.jpg" alt="Product Image">
+        <h3>Mindjuse(48)</h3>
+        <p>Sifra: P0048</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0049.jpg', 'Mindjuse(49)', 'Sifra: P0049, Cena: 500RSD')">
+        <img src="img/mindjuse/0049.jpg" alt="Product Image">
+        <h3>Mindjuse(49)</h3>
+        <p>Sifra: P0049</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0050.jpg', 'Mindjuse(50)', 'Sifra: P0050, Cena: 500RSD')">
+        <img src="img/mindjuse/0050.jpg" alt="Product Image">
+        <h3>Mindjuse(50)</h3>
+        <p>Sifra: P0050</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0051.jpg', 'Mindjuse(51)', 'Sifra: P0051, Cena: 500RSD')">
+        <img src="img/mindjuse/0051.jpg" alt="Product Image">
+        <h3>Mindjuse(51)</h3>
+        <p>Sifra: P0051</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0052.jpg', 'Mindjuse(52)', 'Sifra: P0052, Cena: 500RSD')">
+        <img src="img/mindjuse/0052.jpg" alt="Product Image">
+        <h3>Mindjuse(52)</h3>
+        <p>Sifra: P0052</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0053.jpg', 'Mindjuse(53)', 'Sifra: P0053, Cena: 500RSD')">
+        <img src="img/mindjuse/0053.jpg" alt="Product Image">
+        <h3>Mindjuse(53)</h3>
+        <p>Sifra: P0053</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0054.jpg', 'Mindjuse(54)', 'Sifra: P0054, Cena: 500RSD')">
+        <img src="img/mindjuse/0054.jpg" alt="Product Image">
+        <h3>Mindjuse(54)</h3>
+        <p>Sifra: P0054</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0055.jpg', 'Mindjuse(55)', 'Sifra: P0055, Cena: 500RSD')">
+        <img src="img/mindjuse/0055.jpg" alt="Product Image">
+        <h3>Mindjuse(55)</h3>
+        <p>Sifra: P0055</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0056.jpg', 'Mindjuse(56)', 'Sifra: P0056, Cena: 500RSD')">
+        <img src="img/mindjuse/0056.jpg" alt="Product Image">
+        <h3>Mindjuse(56)</h3>
+        <p>Sifra: P0056</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0057.jpg', 'Mindjuse(57)', 'Sifra: P0057, Cena: 500RSD')">
+        <img src="img/mindjuse/0057.jpg" alt="Product Image">
+        <h3>Mindjuse(57)</h3>
+        <p>Sifra: P0057</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0058.jpg', 'Mindjuse(58)', 'Sifra: P0058, Cena: 500RSD')">
+        <img src="img/mindjuse/0058.jpg" alt="Product Image">
+        <h3>Mindjuse(58)</h3>
+        <p>Sifra: P0058</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0059.jpg', 'Mindjuse(59)', 'Sifra: P0059, Cena: 500RSD')">
+        <img src="img/mindjuse/0059.jpg" alt="Product Image">
+        <h3>Mindjuse(59)</h3>
+        <p>Sifra: P0059</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0060.jpg', 'Mindjuse(60)', 'Sifra: P0060, Cena: 500RSD')">
+        <img src="img/mindjuse/0060.jpg" alt="Product Image">
+        <h3>Mindjuse(60)</h3>
+        <p>Sifra: P0060</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0061.jpg', 'Mindjuse(61)', 'Sifra: P0061, Cena: 500RSD')">
+        <img src="img/mindjuse/0061.jpg" alt="Product Image">
+        <h3>Mindjuse(61)</h3>
+        <p>Sifra: P0061</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0062.jpg', 'Mindjuse(62)', 'Sifra: P0062, Cena: 500RSD')">
+        <img src="img/mindjuse/0062.jpg" alt="Product Image">
+        <h3>Mindjuse(62)</h3>
+        <p>Sifra: P0062</p>
+        <p class="price">500RSD</p>
+      </div>
+      <div class="product-card" data-category="all, mindjuse" onclick="openModal('img/mindjuse/0063.jpg', 'Mindjuse(63)', 'Sifra: P0063, Cena: 500RSD')">
+        <img src="img/mindjuse/0063.jpg" alt="Product Image">
+        <h3>Mindjuse(63)</h3>
+        <p>Sifra: P0063</p>
+        <p class="price">500RSD</p>
+      </div>
+      
+      <!-- Add more product cards -->
+    </div>
+  </section>
+
+  <!-- Modal -->
+  <div id="product-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <img src="" alt="Product Image" id="modal-image">
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Pokloni po Meri. All rights reserved.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
