@@ -1,0 +1,233 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f4e6;
+}
+
+/* Navbar */
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #8b5a2b; /* Darker brown color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navbar .logo {
+    font-size: 15px; /* Slightly larger logo text */
+    color: white;
+    font-weight: bold; /* Bold text for the logo */
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px 15px; /* Added padding for clickable area */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.navbar .nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Light background on hover */
+    color: #8b5a2b; /* Change text color on hover */
+}
+
+
+/* Header Section */
+.header {
+    position: relative;
+    text-align: center;
+}
+
+.header-image {
+    width: 100%;
+    height: 80vh; /* Maintain aspect ratio */
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional shadow for better readability */
+}
+
+.header-text h1 {
+    font-size: 2.5em; /* Adjust font size */
+}
+
+.header-text p {
+    font-size: 1.2em; /* Adjust font size for subtitle */
+}
+
+/* Other existing styles remain unchanged */
+
+
+/* Product Showcase */
+.product-showcase {
+    padding: 20px;
+    text-align: center;
+}
+.tabs {
+    margin-bottom: 20px;
+}
+.tab {
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: #d2a679;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+.tab.active {
+    background-color: #8b5a2b;
+}
+
+/* Product Cards */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 250px;
+    margin: 16px auto;
+}
+.product-card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.product-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 8px 0;
+}
+.product-card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 4px 0;
+}
+.product-card .price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 8px;
+}
+.product-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 30px; /* Increased padding for a spacious feel */
+    border-radius: 10px; /* Slightly larger border radius */
+    width: 90%; /* Increased width for a more spacious look */
+    max-width: 600px; /* Increased max-width for larger screens */
+    text-align: center; /* Center align text */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px; /* Adjusted for better positioning */
+    right: 20px;
+    font-size: 28px; /* Increased size for easier clicking */
+    color: #ff4d4d; /* Red color for a standout close button */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.close-btn:hover {
+    color: #ff1a1a; /* Darker red on hover for feedback */
+}
+
+.modal-content img {
+    width: 500px; /* Fixed width */
+    height: 500px; /* Fixed height */
+    border-radius: 10px; /* Slightly larger border radius */
+    object-fit: cover; /* Ensure the image fills the space properly */
+}
+
+/* Modal Title */
+#modal-title {
+    font-size: 2rem; /* Larger font size for the title */
+    font-weight: 600; /* Bold for emphasis */
+    color: #333; /* Dark gray for a modern look */
+    margin: 15px 0; /* Margin for spacing */
+    text-align: left;
+    padding-left: 20px;
+}
+
+/* Modal Description */
+#modal-description {
+    font-size: 1.1rem; /* Slightly larger font size for readability */
+    line-height: 1.6; /* Increased line height for better spacing */
+    color: #666; /* Medium gray for a softer appearance */
+    margin-top: 10px; /* Space above description */
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+/* Footer Styles */
+.footer {
+    background-color: #8b5a2b; /* Same color as the navbar for consistency */
+    color: white; /* White text color */
+    text-align: center; /* Center align the text */
+    padding: 10px 0; /* Padding for spacing */
+    position: relative; /* Ensure proper layout */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+}
+
+
+@media (max-width: 600px) {
+    .tabs {
+        flex-wrap: wrap; /* Allow tabs to wrap into multiple rows */
+        justify-content: center; /* Center align the tabs */
+    }
+    .tab {
+        margin: 10px; /* Add margin around the tabs */
+        width: calc(40% - 20px); /* Make tabs take up 50% of the width minus margin */
+        /* Alternatively, if you want them to be a fixed size, use a fixed width instead of calc */
+    }
+
+    .modal-content img{
+        width: 200px;
+        height: 200px;
+    }
+}
